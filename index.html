@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Henok Anil Anton - AI & Software Developer Portfolio. Specializing in AI/ML, Agentic AI, Enterprise Systems, and Modern Web Applications.">
+  <meta name="keywords"
+    content="Henok Anil Anton, Portfolio, Software Developer, AI Engineer, Machine Learning, MBCET, RIKEN, Web Development">
+  <meta name="author" content="Henok Anil Anton">
+  <title>Henok Anil Anton | AI & Software Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Background Glow & Grid Canvas -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Header / Navigation (A1, A2, A9) -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Henok Anil Anton Homepage">
+        <span class="logo-symbol">&lt;</span>
+        <span class="logo-text">Henok</span>
+        <span class="logo-accent">.dev</span>
+        <span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="site-nav" id="siteNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active"><i data-lucide="home"></i> Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i data-lucide="user"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i data-lucide="code-2"></i> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i data-lucide="folder-git-2"></i> Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link"><i data-lucide="briefcase"></i> Experience</a>
+          </li>
+          <li class="nav-item"><a href="#education" class="nav-link"><i data-lucide="graduation-cap"></i> Education</a>
+          </li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i data-lucide="mail"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls: Theme Switcher & Mobile Hamburger (B2, B4) -->
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="action-btn theme-toggle-btn" aria-label="Toggle light and dark theme"
+          title="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+
+        <a href="assets/Henok_Anil_Anton_CV_EY-1.pdf" download="Henok_Anil_Anton_CV.pdf"
+          class="btn btn-sm btn-outline nav-cv-btn">
+          <i data-lucide="download"></i> CV
+        </a>
+
+        <button id="mobileMenuBtn" class="action-btn mobile-menu-btn" aria-label="Open navigation menu"
+          aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper (A2) -->
+  <main id="main-content">
+
+    <!-- Section 1: Hero Banner (A1, A8, A9) -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Research & Software Engineering Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Henok Anil Anton</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">I build </span>
+            <span id="typewriter" class="typewriter-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Computer Science undergraduate at MBCET with a strong foundation in software development, AI/ML, and
+            data-driven problem solving. Experienced across full project lifecycles — from ideation to production.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i data-lucide="arrow-down-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <i data-lucide="send"></i>
+            </a>
+            <a href="assets/Henok_Anil_Anton_CV_EY-1.pdf" download="Henok_Anil_Anton_CV.pdf" class="btn btn-glass">
+              <i data-lucide="file-text"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Quick Social & Info Links -->
+          <div class="hero-social-links">
+            <a href="https://github.com/HenokAnil" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              aria-label="GitHub Profile">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="https://linkedin.com/in/henok-anil-anton" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" aria-label="LinkedIn Profile">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="mailto:henoknil13@gmail.com" class="social-icon-btn" aria-label="Email Me">
+              <i data-lucide="mail"></i>
+            </a>
+            <span class="social-divider"></span>
+            <span class="location-tag"><i data-lucide="map-pin"></i> Kollam, Kerala, India</span>
+          </div>
+        </div>
+
+        <!-- Hero Avatar & Graphic Card -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-image-container">
+              <img src="assets/images/avatar.jpeg" alt="Henok Anil Anton - Software Developer & AI Researcher"
+                class="avatar-img" loading="eager">
+              <div class="avatar-badge">
+                <i data-lucide="sparkles"></i>
+                <div>
+                  <strong>AI & Enterprise Systems</strong>
+                  <span>MBCET '26</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: About Me (A3) -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Profile Summary</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Card -->
+          <article class="about-card main-about-card">
+            <div class="card-icon-header">
+              <i data-lucide="terminal" class="icon-accent"></i>
+              <h3>Engineer & AI Researcher</h3>
+            </div>
+            <p class="about-text">
+              Motivated Computer Science and Engineering undergraduate at Mar Baselios College of Engineering and
+              Technology (MBCET) with a strong foundation in software development, artificial intelligence, and
+              data-driven problem-solving.
+            </p>
+            <p class="about-text">
+              Proven ability to contribute in international research environments (such as RIKEN, Japan) and deliver
+              under pressure in competitive national hackathons. Experienced across the full project lifecycle — from
+              ideation and prototyping to deployment — spanning AI/ML, mobile applications, and enterprise web
+              solutions.
+            </p>
+            <p class="about-text">
+              Actively developing expertise in agentic AI, prompt engineering, and modern development frameworks. Brings
+              rigorous analytical thinking, adaptability, and a commitment to engineering excellence.
+            </p>
+
+            <!-- Quick Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <span class="metric-number">6+</span>
+                <span class="metric-label">Flagship Projects</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">2x</span>
+                <span class="metric-label">SIH Qualifier</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">2+</span>
+                <span class="metric-label">Research & Internships</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">5+</span>
+                <span class="metric-label">Certifications</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Aside: Highlights & Learning Path (A2, A4) -->
+          <aside class="about-aside">
+            <!-- Learning Roadmap (Ordered List - A4) -->
+            <div class="aside-card">
+              <h3 class="aside-title"><i data-lucide="compass"></i> Engineering Trajectory</h3>
+              <ol class="roadmap-list">
+                <li class="roadmap-item">
+                  <span class="roadmap-step">01</span>
+                  <div class="roadmap-info">
+                    <strong>Core Fundamentals</strong>
+                    <span>DSA, Object-Oriented Architecture & Web Standards</span>
+                  </div>
+                </li>
+                <li class="roadmap-item">
+                  <span class="roadmap-step">02</span>
+                  <div class="roadmap-info">
+                    <strong>Enterprise & Full-Stack</strong>
+                    <span>Java, React, Node.js, Electron.js & UI/UX</span>
+                  </div>
+                </li>
+                <li class="roadmap-item">
+                  <span class="roadmap-step">03</span>
+                  <div class="roadmap-info">
+                    <strong>AI & Intelligent Systems</strong>
+                    <span>NLP, Threat Graphs, RIKEN Research & Agentic AI</span>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <!-- Quick Info Description List (A4) -->
+            <div class="aside-card">
+              <h3 class="aside-title"><i data-lucide="info"></i> Quick Facts</h3>
+              <dl class="info-desc-list">
+                <dt>Institution:</dt>
+                <dd>Mar Baselios College of Engg. & Tech. (MBCET)</dd>
+                <dt>Degree:</dt>
+                <dd>B.Tech in Computer Science & Engineering</dd>
+                <dt>Languages:</dt>
+                <dd>English (Fluent), Malayalam (Native)</dd>
+                <dt>Focus Areas:</dt>
+                <dd>Agentic AI, Cyber Threat Graphs, Enterprise Platforms</dd>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Technical Skills (A3, A4, B1) -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Technical Proficiency</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">Expertise</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Skills Category Tabs (B2) -->
+        <div class="skills-filter-wrapper">
+          <div class="filter-btn-group" id="skillCategoryTabs" role="tablist">
+            <button class="filter-btn active" data-skill-category="all" role="tab" aria-selected="true">All
+              Skills</button>
+            <button class="filter-btn" data-skill-category="languages" role="tab" aria-selected="false">Programming
+              Languages</button>
+            <button class="filter-btn" data-skill-category="frameworks" role="tab" aria-selected="false">Frameworks &
+              Tools</button>
+            <button class="filter-btn" data-skill-category="ai" role="tab" aria-selected="false">AI & Machine
+              Learning</button>
+            <button class="filter-btn" data-skill-category="domains" role="tab" aria-selected="false">Domains &
+              Core</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Skills Grid Container (Rendered via JS - B1) -->
+        <div class="skills-grid" id="skillsContainer">
+          <!-- Populated by JavaScript script.js -->
+        </div>
+
+        <!-- Description List for Core Skill-Proficiency Pairs (A4) -->
+        <div class="skill-definitions-card">
+          <h3 class="card-subtitle"><i data-lucide="layers"></i> Domain Competencies & Applied Focus</h3>
+          <dl class="domain-dl">
+            <div class="dl-group">
+              <dt><i data-lucide="cpu"></i> Agentic AI & Prompt Engineering</dt>
+              <dd>Designing autonomous AI agents, multi-agent coordination workflows, and structured prompting for
+                production adoption.</dd>
+            </div>
+            <div class="dl-group">
+              <dt><i data-lucide="shield-alert"></i> Cybersecurity & Threat Graph Analysis</dt>
+              <dd>Reconstructing multi-stage attack timelines and anomaly detection using semantic relationship graphs
+                from raw log feeds.</dd>
+            </div>
+            <div class="dl-group">
+              <dt><i data-lucide="boxes"></i> Enterprise Software Architecture</dt>
+              <dd>Building compliance-ready, traceable knowledge asset platforms with cryptographically verified audit
+                trails and access governance.</dd>
+            </div>
+            <div class="dl-group">
+              <dt><i data-lucide="layout"></i> Full-Stack & Mobile UI/UX Development</dt>
+              <dd>Crafting responsive, human-centric web applications and cross-platform mobile experiences with Flutter
+                and React.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Projects Showcase (A3, A6, B1, B2, B4) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Featured Work</span>
+          <h2 class="section-title">Showcase <span class="gradient-text">Projects</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-lead">Explore selected projects dynamically rendered from structured datasets. Filter by
+            domain or bookmark your favorites.</p>
+        </div>
+
+        <!-- Project Filtering & Favorites Toolbar (B2, B4) -->
+        <div class="projects-toolbar">
+          <div class="filter-btn-group" id="projectFilterGroup">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="ai">AI / ML</button>
+            <button class="filter-btn" data-filter="enterprise">Enterprise / Full-Stack</button>
+            <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+            <button class="filter-btn" data-filter="mobile">Mobile / UI</button>
+          </div>
+
+          <button id="showFavoritesBtn" class="btn btn-sm btn-glass favorites-toggle-btn" title="View Saved Projects">
+            <i data-lucide="bookmark"></i>
+            <span>Favorites (<span id="favCount">0</span>)</span>
+          </button>
+        </div>
+
+        <!-- Dynamic Projects Cards Container (B1 - Generated by JavaScript) -->
+        <div class="projects-grid" id="projectsContainer">
+          <!-- Cards rendered by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details Lightbox / Modal (B2) -->
+    <div id="projectModal" class="modal-backdrop" aria-hidden="true">
+      <div class="modal-dialog">
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+        <div class="modal-body" id="modalContent">
+          <!-- Populated dynamically when project card is clicked -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 5: Internship & Research Experience (A3, A5) -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Work History</span>
+          <h2 class="section-title">Internships & <span class="gradient-text">Research</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Tabular Presentation of Internships (A5) -->
+        <div class="table-responsive-wrapper">
+          <table class="data-table" aria-label="Internship and Research History">
+            <thead>
+              <tr>
+                <th scope="col">Organisation</th>
+                <th scope="col">Role & Division</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Key Contributions & Technologies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="org-cell">
+                    <span class="org-name">RIKEN, Japan</span>
+                    <span class="org-sub">AiP | MBCET × RIKEN Collaboration</span>
+                  </div>
+                </td>
+                <td><span class="role-badge">Virtual Research Intern</span><br><small>Decentralized Big Data
+                    Team</small></td>
+                <td>Dec 2025 – Mar 2026</td>
+                <td>
+                  <ul class="table-bullet-list">
+                    <li>Contributed to the <strong>Personary</strong> app by designing and implementing Undo/Redo
+                      functionality and Hypernode features.</li>
+                    <li>Integrated UI components using <strong>Flutter (Dart)</strong> in a remote international
+                      research environment.</li>
+                    <li>Enhanced usability and reduced user error in a production-scale application.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="org-cell">
+                    <span class="org-name">IBM SkillsBuild</span>
+                    <span class="org-sub">CSRBOX Foundation</span>
+                  </div>
+                </td>
+                <td><span class="role-badge">Project-Based Learning Intern</span><br><small>Agentic AI Track</small>
+                </td>
+                <td>Jul – Aug 2025</td>
+                <td>
+                  <ul class="table-bullet-list">
+                    <li>Completed an intensive programme covering the full lifecycle of building production-ready
+                      <strong>AI Agents</strong> — from architecture to deployment.
+                    </li>
+                    <li>Acquired hands-on practical experience with agentic AI frameworks applied to real-world
+                      enterprise adoption scenarios.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Hackathons & Achievements Highlight Cards -->
+        <div class="hackathons-container">
+          <h3 class="subsection-title text-center"><i data-lucide="trophy"></i> Hackathons, Competitions & Events</h3>
+          <div class="hackathons-grid">
+            <div class="hackathon-card">
+              <div class="hack-badge">SIH 2026</div>
+              <h4>Smart India Hackathon 2026</h4>
+              <p>Prelims Qualifier · MBCET Team Palimpsest (Aug 2026)</p>
+            </div>
+            <div class="hackathon-card">
+              <div class="hack-badge">SIH 2025</div>
+              <h4>Smart India Hackathon 2025</h4>
+              <p>Prelims Qualifier · MBCET Team Ninja Coders (Sep 2025)</p>
+            </div>
+            <div class="hackathon-card">
+              <div class="hack-badge">National AI</div>
+              <h4>AVEVA YUVAAN AI/ML Hackathon</h4>
+              <p>National Hackathon Qualifier · IIT Hyderabad (2024)</p>
+            </div>
+            <div class="hackathon-card">
+              <div class="hack-badge">Google GDG</div>
+              <h4>GDG Solution Challenge</h4>
+              <p>Campus Solution Challenge · Hack2skill (2025)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Education & Certifications (A3, A5) -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Academic Background</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Education History Table (A5) -->
+        <div class="table-responsive-wrapper">
+          <table class="data-table" aria-label="Academic Qualifications Table">
+            <thead>
+              <tr>
+                <th scope="col">Institution</th>
+                <th scope="col">Degree / Qualification</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Score / Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Mar Baselios College of Engineering & Technology
+                    (MBCET)</strong><br><small>Thiruvananthapuram, Kerala</small></td>
+                <td>B.Tech in Computer Science & Engineering</td>
+                <td>2023 – Present</td>
+                <td><span class="status-tag in-progress">4rd Year (Active)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Sree Narayana Public School</strong><br><small>Kollam, Kerala (CBSE)</small></td>
+                <td>Class XII (Higher Secondary)</td>
+                <td>2023</td>
+                <td><span class="status-tag score">91.0%</span></td>
+              </tr>
+              <tr>
+                <td><strong>Trinity Lyceum</strong><br><small>Kollam, Kerala</small></td>
+                <td>Class X (Secondary School)</td>
+                <td>2021</td>
+                <td><span class="status-tag passed">Completed</span></td>
+              </tr>
+              <tr>
+                <td><strong>Progressive English School</strong><br><small>Sharjah, United Arab Emirates</small></td>
+                <td>Primary & Middle Schooling</td>
+                <td>Foundation</td>
+                <td><span class="status-tag passed">International Exposure</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Certifications List (A4 - Unordered List) -->
+        <div class="certifications-card">
+          <h3 class="card-subtitle"><i data-lucide="award"></i> Professional Certifications & NPTEL Recognitions</h3>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <i data-lucide="check-circle-2" class="cert-check"></i>
+              <div class="cert-content">
+                <strong>Programming, Data Structures & Algorithms Using Python</strong>
+                <span>NPTEL – IIT Madras (Elite Certification) · Score: 66% (Jan–Mar 2026)</span>
+              </div>
+            </li>
+            <li class="cert-item">
+              <i data-lucide="check-circle-2" class="cert-check"></i>
+              <div class="cert-content">
+                <strong>Advances in Strategic Human Resource Management (HRM)</strong>
+                <span>NPTEL – IIT Bombay (Elite Certification) · Score: 65% (Jan–Feb 2026)</span>
+              </div>
+            </li>
+            <li class="cert-item">
+              <i data-lucide="check-circle-2" class="cert-check"></i>
+              <div class="cert-content">
+                <strong>Agentic AI: From Learner to Builder</strong>
+                <span>IBM SkillsBuild / CSRBOX Foundation (2025)</span>
+              </div>
+            </li>
+            <li class="cert-item">
+              <i data-lucide="check-circle-2" class="cert-check"></i>
+              <div class="cert-content">
+                <strong>Beginning Python & Java Programming</strong>
+                <span>Infosys Springboard Wingspan Certifications (2024)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Contact & Interactive Form (A3, A7, B3) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-lead">Have a question, opportunity, or collaboration in mind? Send a message or reach out
+            directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info Card (A7) -->
+          <div class="contact-info-card">
+            <h3>Let's Connect & Build</h3>
+            <p class="contact-subtext">Feel free to connect directly via email, phone, or download my comprehensive
+              resume.</p>
+
+            <div class="contact-channels">
+              <a href="mailto:henoknil13@gmail.com" class="channel-item">
+                <div class="channel-icon"><i data-lucide="mail"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">Email</span>
+                  <span class="channel-value">henoknil13@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+919876543210" class="channel-item">
+                <div class="channel-icon"><i data-lucide="phone-call"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">Phone</span>
+                  <span class="channel-value">+91 (India)</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/henok-anil-anton" target="_blank" rel="noopener noreferrer"
+                class="channel-item">
+                <div class="channel-icon"><i data-lucide="linkedin"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">LinkedIn</span>
+                  <span class="channel-value">linkedin.com/in/henok-anil-anton</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/HenokAnil" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon"><i data-lucide="github"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">GitHub</span>
+                  <span class="channel-value">github.com/HenokAnil</span>
+                </div>
+              </a>
+
+              <a href="assets/Henok_Anil_Anton_CV_EY-1.pdf" download="Henok_Anil_Anton_CV.pdf"
+                class="channel-item resume-download-channel">
+                <div class="channel-icon"><i data-lucide="file-down"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">Downloadable CV</span>
+                  <span class="channel-value">Henok_Anil_Anton_CV.pdf</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form with Regex Validation (B3) -->
+          <div class="contact-form-card">
+            <form id="contactForm" novalidate>
+              <div class="form-feedback" id="formGlobalFeedback" role="alert" aria-live="polite"></div>
+
+              <!-- Name Field -->
+              <div class="form-group" id="nameGroup">
+                <label for="userName">Your Name <span class="required-star">*</span></label>
+                <div class="input-with-icon">
+                  <i data-lucide="user" class="input-icon"></i>
+                  <input type="text" id="userName" name="userName" placeholder="e.g. Alan Turing" required
+                    autocomplete="name">
+                </div>
+                <span class="error-msg" id="nameError"></span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group" id="emailGroup">
+                <label for="userEmail">Your Email <span class="required-star">*</span></label>
+                <div class="input-with-icon">
+                  <i data-lucide="mail" class="input-icon"></i>
+                  <input type="email" id="userEmail" name="userEmail" placeholder="e.g. alan@example.com" required
+                    autocomplete="email">
+                </div>
+                <span class="error-msg" id="emailError"></span>
+              </div>
+
+              <!-- Subject / Topic Field -->
+              <div class="form-group" id="subjectGroup">
+                <label for="userSubject">Subject</label>
+                <div class="input-with-icon">
+                  <i data-lucide="tag" class="input-icon"></i>
+                  <input type="text" id="userSubject" name="userSubject"
+                    placeholder="e.g. Project Inquiry / Opportunity">
+                </div>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group" id="messageGroup">
+                <label for="userMessage">Your Message <span class="required-star">*</span></label>
+                <div class="input-with-icon textarea-wrapper">
+                  <i data-lucide="message-square" class="input-icon textarea-icon"></i>
+                  <textarea id="userMessage" name="userMessage" rows="4"
+                    placeholder="Write your message here (min. 10 characters)..." required></textarea>
+                </div>
+                <span class="error-msg" id="messageError"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <i data-lucide="send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (A2, A9) -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-symbol">&lt;</span>
+          <span class="logo-text">Henok Anil Anton</span>
+          <span class="logo-symbol">/&gt;</span>
+        </a>
+        <p class="footer-tagline">AI & Software Developer building intelligent, high-assurance digital systems.</p>
+      </div>
+
+      <div class="footer-links">
+        <span class="footer-heading">Quick Navigation</span>
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> Henok Anil Anton. Built with Semantic HTML5, CSS3 & Modern
+          JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Floating Button (A9, B2) -->
+  <button id="scrollToTopBtn" class="scroll-top-btn" aria-label="Scroll back to top" title="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Custom JavaScript Logic (B1-B5) -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
