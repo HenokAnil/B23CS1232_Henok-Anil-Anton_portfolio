@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SeismoDetect</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        .panel {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        h1, h2 { color: #ffffff; }
+        .controls { margin-bottom: 20px; }
+        button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover { background-color: #2563eb; }
+        #waveform-plot { width: 100%; height: 400px; }
+        .quality-metric { display: flex; justify-content: space-between; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <h1>SeismoDetect</h1>
+        <button id="upload-btn">Upload .mseed File</button>
+        <button id="fetch-btn">Fetch from SCEDC</button>
+        <span id="status-text"></span>
+    </div>
+
+    <div class="container">
+        <div class="panel">
+            <h2>Waveform</h2>
+            <div id="waveform-plot"></div>
+        </div>
+        <div class="panel">
+            <h2>Quality & Detections</h2>
+            <div class="quality-metric"><span>SNR:</span> <span id="val-snr">--</span></div>
+            <div class="quality-metric"><span>Noise Label:</span> <span id="val-noise">--</span></div>
+            <hr>
+            <div class="quality-metric"><span>P-Pick:</span> <span id="val-p">--</span></div>
+            <div class="quality-metric"><span>S-Pick:</span> <span id="val-s">--</span></div>
+            <button id="report-btn" style="width: 100%; margin-top: 20px;">Generate PDF Report</button>
+        </div>
+    </div>
+
+    <!-- We would load Plotly from a local copy in production -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script src="renderer.js"></script>
+</body>
+</html>
