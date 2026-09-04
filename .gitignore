@@ -49,3 +49,7 @@ out/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Generated Artifacts
+backend/reports/generated/
+

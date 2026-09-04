@@ -25,10 +25,9 @@ class EQTransformerDetector:
         self.device = torch.device(device)
         logger.info(f"Loading EQTransformer model on {self.device}")
         
-        self.model = sbm.EQTransformer(classes=3) # Noise, P, S
-        
         if weights_path:
             logger.info(f"Loading custom weights from {weights_path}")
+            self.model = sbm.EQTransformer(phases=["P", "S"])
             self.model.load_state_dict(torch.load(weights_path, map_location=self.device))
         else:
             logger.info("Loading pretrained 'original' weights")
@@ -42,10 +41,29 @@ class EQTransformerDetector:
         Takes a 3-component waveform of shape (3, N) and returns detections.
         Assumes sampling rate is 100 Hz and length is 6000 (60s).
         """
-        if waveform.shape[1] != 6000:
-            logger.warning(f"Expected 6000 samples, got {waveform.shape[1]}. Model may behave unexpectedly.")
+        # Ensure waveform is shape (3, 6000)
+        channels, length = waveform.shape
+        if channels != 3:
+            # If 1 channel or >3, expand or take first 3
+            if channels == 1:
+                waveform = np.repeat(waveform, 3, axis=0)
+            else:
+                waveform = waveform[:3]
+                
+        if waveform.shape[1] < 6000:
+            padded = np.zeros((3, 6000), dtype=np.float32)
+            padded[:, :waveform.shape[1]] = waveform
+            waveform = padded
+        elif waveform.shape[1] > 6000:
+            waveform = waveform[:, :6000]
+
+        # Standardize (z-score normalize) per component
+        for i in range(3):
+            std = np.std(waveform[i])
+            if std > 1e-6:
+                waveform[i] = (waveform[i] - np.mean(waveform[i])) / std
             
-        # Prepare tensor (batch_size=1, channels=3, samples=N)
+        # Prepare tensor (batch_size=1, channels=3, samples=6000)
         x = torch.tensor(waveform, dtype=torch.float32).unsqueeze(0).to(self.device)
         
         with torch.no_grad():
